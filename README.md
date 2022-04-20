@@ -1,2 +1,2 @@
 # GardenPlantingCalendar
-List out dates to plant all of my different seeds
+The idea is to start documenting all the seeds I've bought so far. To include the optimal growth temperatures and days to harves. Eventually I want to print out  monthly calendar to show me what days I need to start seeds based on temperatures.
