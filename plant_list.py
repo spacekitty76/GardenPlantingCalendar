@@ -80,6 +80,36 @@ zucchino_squash = plants.Vegetable(base_name="Squash", optimal_temp=[70, 95],
     variety_name="Zucchino Rampicante Squash", days_to_maturity=[70], owned=True)
 plant_list.append(rugosa_squash)
 
+italian_parsley = plants.Vegetable(base_name="Parsley", optimal_temp=[50, 70],
+    company_name="https://www.rareseeds.com/store/vegetables/petroselinum/parsley-giant-of-italy",
+    variety_name="Giant of Italy", owned=True, notes="Annual; Surface sow seeds.")
+plant_list.append(italian_parsley)
+
+blue_basil = plants.Vegetable(base_name="Basil", optimal_temp=[70, 85], company_name="https://www.rareseeds.com/store/vegetables/basil/basil-blue-spice",
+    variety_name="Blue Spice", owned=True, notes="Remove flower buds to prolong harvest.")
+plant_list.append(blue_basil)
+
+thyme = plants.Vegetable(base_name="Thyme", optimal_temp=[70, 70],
+    company_name="https://www.rareseeds.com/store/vegetables/thymus/thyme", variety_name="Thyme", owned=True,
+    notes="Perennial; Surface sow seeds")
+plant_list.append(thyme)
+
+rosemary = plants.Vegetable(base_name="Rosemary", optimal_temp=[80, 90],
+    company_name="https://www.rareseeds.com/store/vegetables/rosmarinus/rosemary-rosy",
+    variety_name="Rosy", owned=True, notes="Perennial; Barely cover seeds when sowing. \
+        Can be challenging to start the seeds. So maybe do a few extra, or throw some outside.")
+plant_list.append(rosemary)
+
+cilantro = plants.Vegetable(base_name="Cilantro", optimal_temp=[60, 80],
+    company_name="https://www.rareseeds.com/store/vegetables/early-spring-favorites/cilantro-slo-bolt",
+    variety_name="Slo-Bolt", owned=True, notes="Succession plant every few weeks for fresh harvest.")
+plant_list.append(cilantro)
+
+dill = plants.Vegetable(base_name="Dill", optimal_temp=[55, 75],
+    company_name="https://www.rareseeds.com/store/vegetables/dill/dill-elephant",
+    variety_name="Elephant", owned=True)
+plant_list.append(dill)
+
 
 for item in plant_list:
     print("==========================================================")
@@ -88,5 +118,6 @@ for item in plant_list:
     print(f"optimal_temp: {item.optimal_temp}")
     print(f"maturity: {item.days_to_maturity}")
     print(f"owned: {item.owned}")
+    print(f"Notes: {item.notes}")
     print("==========================================================")
 
